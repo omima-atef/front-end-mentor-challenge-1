@@ -1,0 +1,116 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    margin: 0;
+    background: hsl(30, 38%, 92%);
+}
+.conteiner{
+    width: fit-content;
+    display: flex;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    
+}
+@media (min-width:650px){
+    .conteiner{
+        margin: calc((100vh - 450px)/2) auto;
+    }
+    .conteiner img{
+        width: 300px;
+    }
+}
+.mobil{
+    display:none;
+}
+.conteiner > div{
+    background: white;
+    padding: 30px;
+    width: 300px;
+}
+.conteiner h3{
+    margin-bottom: 15px;
+    letter-spacing: 6px;
+    color: hsl(228, 12%, 48%);
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+.conteiner h1{
+    font-size: 35px;
+    margin: 20px 0;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    line-height: 1;
+}
+.conteiner p{
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+    margin: 15px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.conteiner div div{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 35px;
+    color: hsl(157.81deg 39.46% 36.27%);
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+}
+.conteiner div div span:nth-child(2){
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+}
+.conteiner button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    background: #3d8168;
+    color: white;
+    transition: .3s;
+    font-family: 'Montserrat', sans-serif;
+}
+.conteiner button i{
+    margin: 0 5px;
+}
+.conteiner button:hover{
+    background: #1a4031;
+}
+@media (max-width:650px){
+    img.desktop{
+        display: none;
+    }
+    .mobil{
+        display:block;
+        width: 350px;
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+    .conteiner > div{
+        width: 350px;
+
+    }
+    .conteiner h1 {
+        font-size: 30px;
+    }
+    .conteiner p {
+        font-size: 13.8px;
+    }
+    .conteiner div div {
+        font-size: 32px;
+    }
+}
